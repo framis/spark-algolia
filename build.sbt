@@ -1,6 +1,6 @@
 val sparkVersion = "2.1.0"
 
-resolvers += 
+resolvers +=
   "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 lazy val root = (project in file(".")).
@@ -13,7 +13,7 @@ lazy val root = (project in file(".")).
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
   "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
-  "com.algolia" %% "scala-client" % "1.0.1-SNAPSHOT"
+  "com.algolia" %% "algoliasearch-scala" % "1.19.0-SNAPSHOT"
 )
 
 // META-INF discarding
