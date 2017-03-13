@@ -5,9 +5,9 @@ import algolia.AlgoliaDsl._
 import algolia.AlgoliaClient
 import scala.concurrent.ExecutionContext.Implicits.global
 
-object AlgoliaClient {
+object AlgoliaTest {
   def main(args: Array[String]) {
-    
+
     val conf = new SparkConf().setAppName("AlgoliaClient")
     val sc = new SparkContext(conf)
 
